@@ -4,12 +4,14 @@ var numOfImages = 4;
  function openModal() {
    document.getElementById('myModal').style.display = "flex";
    modals[slideIndex-1].style.display = "flex";
+   document.documentElement.style.overflow = "hidden";
  }
 
 // Close the Modal
  function closeModal() {
    document.getElementById('myModal').style.display = "none";
    modals[slideIndex-1].style.display = "none";
+   document.documentElement.style.overflow = "auto";
  }
 
 var slides = document.getElementsByClassName("mySlides");
